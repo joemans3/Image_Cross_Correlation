@@ -1,0 +1,8 @@
+name: ICC
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.13
+  - setuptools
+  - setuptools-scm
