@@ -1,6 +1,7 @@
 import numpy as np
 
-def sim_circle_img(dims: tuple, radii: int| list, loc: tuple|list)-> np.ndarray:
+
+def sim_circle_img(dims: tuple, radii: int | list, loc: tuple | list) -> np.ndarray:
     ''' Create a 2D image of circle(s) with specified radius(radii) and location(s)
 
     Parameters:
@@ -31,7 +32,8 @@ def sim_circle_img(dims: tuple, radii: int| list, loc: tuple|list)-> np.ndarray:
                     img[i, j] = 1
     return img
 
-def sim_rectangle_img(dims: tuple, width: int| list, height: int| list, loc: tuple|list)-> np.ndarray:
+
+def sim_rectangle_img(dims: tuple, width: int | list, height: int | list, loc: tuple | list) -> np.ndarray:
     ''' Create a 2D image of rectangle(s) with specified width, height and location(s)
 
     Parameters:

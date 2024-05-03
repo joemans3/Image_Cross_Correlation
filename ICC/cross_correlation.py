@@ -5,7 +5,7 @@ from scipy import signal
 
 
 # calculate the cross-correlation of two images
-def cross_correlation(img1: np.ndarray, img2: np.ndarray)-> np.ndarray:
+def cross_correlation(img1: np.ndarray, img2: np.ndarray) -> np.ndarray:
     ''' Calculate the cross-correlation of two images
 
     Parameters:
@@ -24,7 +24,7 @@ def cross_correlation(img1: np.ndarray, img2: np.ndarray)-> np.ndarray:
 
 
 # auto-correlation of an image with translation
-def auto_correlation(img: np.ndarray, x: int, y: int)-> np.ndarray:
+def auto_correlation(img: np.ndarray, x: int, y: int) -> np.ndarray:
     ''' Calculate the auto-correlation of an image with translation
 
     Parameters:
@@ -45,7 +45,7 @@ def auto_correlation(img: np.ndarray, x: int, y: int)-> np.ndarray:
 
 
 # peak of correlation
-def correlation_peak_detection(cross_corr: np.ndarray, closeness_threshold: float)-> np.ndarray:
+def correlation_peak_detection(cross_corr: np.ndarray, closeness_threshold: float) -> np.ndarray:
     ''' Detect the peak of the cross-correlation
 
     Parameters:
@@ -54,7 +54,7 @@ def correlation_peak_detection(cross_corr: np.ndarray, closeness_threshold: floa
         The cross-correlation of two images
     closeness_threshold: float
         The threshold for finding peak (s) near the maximum
-    
+
     Returns:
     --------
     np.ndarray

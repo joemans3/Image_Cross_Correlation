@@ -2,7 +2,7 @@ import numpy as np
 
 
 # function to find the intensity radially from the center of the image
-def radial_intensity(img: np.ndarray, center: tuple)->np.ndarray:
+def radial_intensity(img: np.ndarray, center: tuple) -> np.ndarray:
     '''
     Parameters:
     -----------

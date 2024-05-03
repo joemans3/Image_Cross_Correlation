@@ -4,7 +4,7 @@ import numpy as np
 
 
 # create a sub-image from a larger image in either 2D or 3D
-def sub_space_img_2D(input_img: np.ndarray, x: int, y: int, width: int, height: int)-> np.ndarray:
+def sub_space_img_2D(input_img: np.ndarray, x: int, y: int, width: int, height: int) -> np.ndarray:
     ''' Create a 2D sub-image from a larger image
 
     Parameters:
@@ -31,7 +31,7 @@ def sub_space_img_2D(input_img: np.ndarray, x: int, y: int, width: int, height: 
     return input_img[x:x + width, y:y + height]
 
 
-def sub_space_img_3D(input_img: np.ndarray, x: int, y: int, z: int, width: int, height: int, depth: int)-> np.ndarray:
+def sub_space_img_3D(input_img: np.ndarray, x: int, y: int, z: int, width: int, height: int, depth: int) -> np.ndarray:
     ''' Create a 3D sub-image from a larger image
 
     Parameters:
@@ -63,7 +63,7 @@ def sub_space_img_3D(input_img: np.ndarray, x: int, y: int, z: int, width: int, 
 
 
 # subtract mean background from an image
-def image_background_subtraction(img: np.ndarray, background: float)-> np.ndarray:
+def image_background_subtraction(img: np.ndarray, background: float) -> np.ndarray:
     ''' Subtract the mean background from an image
 
     Parameters:
@@ -82,7 +82,7 @@ def image_background_subtraction(img: np.ndarray, background: float)-> np.ndarra
 
 
 # convert image to int 64
-def convert_img_int64(img: np.ndarray)-> np.ndarray:
+def convert_img_int64(img: np.ndarray) -> np.ndarray:
     ''' Convert an image to int64
 
     Parameters:
@@ -99,7 +99,7 @@ def convert_img_int64(img: np.ndarray)-> np.ndarray:
 
 
 # normalize an image
-def normalize_img(img: np.ndarray, lower: float, upper: float, ignore_zeros: bool)-> np.ndarray:
+def normalize_img(img: np.ndarray, lower: float, upper: float, ignore_zeros: bool) -> np.ndarray:
     ''' Normalize an image
 
     Parameters:
@@ -132,5 +132,3 @@ def normalize_img(img: np.ndarray, lower: float, upper: float, ignore_zeros: boo
     else:
         img = (img - lower) / (upper - lower)
     return img
-
-    
